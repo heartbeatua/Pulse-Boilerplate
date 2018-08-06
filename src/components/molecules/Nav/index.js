@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-const colorPrimary = ({ theme }) => theme.palette.primary.normal;
-
 const Wrapper = styled.nav``;
 const List = styled.ul`
   list-style: none;
@@ -18,7 +16,7 @@ const Item = styled.li`
   }
 `;
 const StyledLink = styled(NavLink)`
-  color: ${colorPrimary};
+  color: inherit;
   &:not(.active) {
     text-decoration: none;
   }

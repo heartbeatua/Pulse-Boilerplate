@@ -54,7 +54,7 @@ const config = {
           {
             loader: 'html-loader',
             options: {
-              minimize: true,
+              minimize: !devMode,
               conservativeCollapse: false
             }
           }

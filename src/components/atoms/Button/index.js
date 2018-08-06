@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-const paletteColor = ({ theme, palette }) => theme.palette[palette].normal;
+const paletteColor = ({ theme, palette }) => theme.palette[palette];
 const width = ({ wide }) => (wide ? '100%' : null);
 const cursor = ({ disabled }) => (disabled ? 'not-allowed' : 'pointer');
 const font = ({ theme }) => theme.font.primary;
@@ -59,19 +59,18 @@ const Button = ({ href, type, ...props }) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.string,
-  palette: PropTypes.string,
+  type: PropTypes.oneOf(['button', 'submit']),
+  palette: PropTypes.oneOf(['primary', 'cta', 'black']),
   size: PropTypes.oneOf(['s', 'm', 'l']),
   skin: PropTypes.oneOf(['fill', 'outline']),
   wide: PropTypes.bool,
   disabled: PropTypes.bool,
-  to: PropTypes.string,
   href: PropTypes.string
 };
 
 Button.defaultProps = {
   type: 'button',
-  palette: 'primary',
+  palette: 'black',
   size: 'm',
   skin: 'fill'
 };

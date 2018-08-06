@@ -1,15 +1,8 @@
 const theme = {
   palette: {
-    primary: {
-      normal: '#191919',
-      lighter: '#555'
-    },
-    secondary: {
-      normal: '#62e6ac'
-    },
-    cta: {
-      normal: '#ff8c5f'
-    }
+    primary: '#62e6ac',
+    cta: '#ff8c5f',
+    black: '#191919'
   },
 
   font: {
