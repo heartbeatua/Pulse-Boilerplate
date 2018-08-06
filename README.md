@@ -44,7 +44,7 @@ Atomic design is a methodology composed of five distinct stages working together
 
 ## Import components
 
-You can very easily import your component, where you need, and do not worry about folder location (atoms, molecles, etc...), like this:
+You can very easily import your component, where you need, and do not worry about folder location (atoms, molecules, etc...), like this:
 
 ```js
 import { Button, Input } from 'components';
@@ -53,9 +53,16 @@ import { Button, Input } from 'components';
 ## TODO
 
 - [x] Styled components
+- [ ] Styled themes
+- [ ] styled-system
+- [ ] grid-styled
 - [x] React styleguidist
 - [ ] Redux
-- [ ] Tests
+- [ ] Tests (Jest)
+- [ ] Utils and Build tools (like favicon generator, etc)
+- [ ] Awesome-XXX links
+- [ ] 
+- [ ]
 
 
 ## License
