@@ -1,6 +1,10 @@
-# Atomic Design Boilerplate
+# Pulse Boilerplate
 
-This is React boilerplate, which consist a progressive packages: webpack@4, react@16, eslint (airbnb config), [prettier](https://prettier.io/), [styled-components](https://www.styled-components.com/), [react-styleguidist](https://react-styleguidist.js.org/) and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+This is React based boilerplate, which consist a progressive packages: webpack@4, react@16, eslint (airbnb config), [prettier](https://prettier.io/), [styled-components](https://www.styled-components.com/), [react-styleguidist](https://react-styleguidist.js.org/) and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+
+## Features
+
+## 
 
 ## Setup
 
@@ -19,7 +23,7 @@ Generate production build (will be create a `dist` folder)
 yarn build
 ```
 
-## Style guide
+## React Styleguide and Documentation
 
 Run development server ([http://localhost:6060](http://localhost:6060))
 ```sh
@@ -61,8 +65,7 @@ import { Button, Input } from 'components';
 - [ ] Tests (Jest)
 - [ ] Utils and Build tools (like favicon generator, etc)
 - [ ] Awesome-XXX links
-- [ ] 
-- [ ]
+- [ ] Generact (for copy components)
 
 
 ## License
