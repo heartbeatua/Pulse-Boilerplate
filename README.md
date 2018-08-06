@@ -1,8 +1,63 @@
-### 1. Что ты такое
-### 2. Чем хорош, коротко о методологии, кто создал, краткая вырезки из статьи брэда
-### 3. Setup
-### 4. Более детально про методологию и компоненты (атомы, молекулы) в целом
-### 5. примеры кода
-### 6. что встроено в боилерплейт (lint, prettier, гайдист, styled components, theming, naming?)
-### 7. кому подойдет эта сборка? (для сайтов, для аппочек)
-### 8. лицензия
+# Atomic Design Boilerplate
+
+This is React boilerplate, which consist a progressive packages: webpack@4, react@16, eslint (airbnb config), [prettier](https://prettier.io/), [styled-components](https://www.styled-components.com/), [react-styleguidist](https://react-styleguidist.js.org/) and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+
+## Setup
+
+Install dependencies
+```sh
+yarn
+```
+
+Run development server ([http://localhost:8080](http://localhost:8080))
+```sh
+yarn dev
+```
+
+Generate production build (will be create a `dist` folder)
+```sh
+yarn build
+```
+
+## Style guide
+
+Run development server ([http://localhost:6060](http://localhost:6060))
+```sh
+yarn styleguidist
+```
+
+Generate production build (will be create a `docs` folder)
+```sh
+yarn styleguidist:build
+```
+
+## ESLint
+
+Run and get code review (you can pass a `--fix` setting to try solve a problem automatically)
+```sh
+yarn lint
+```
+
+## What is Atomic Design?
+
+Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. If you want to get more info, check [this article](http://atomicdesign.bradfrost.com/chapter-2/).
+
+## Import components
+
+You can very easily import your component, where you need, and do not worry about folder location (atoms, molecles, etc...), like this:
+
+```js
+import { Button, Input } from 'components';
+```
+
+## TODO
+
+- [x] Styled components
+- [x] React styleguidist
+- [ ] Redux
+- [ ] Tests
+
+
+## License
+
+MIT.
