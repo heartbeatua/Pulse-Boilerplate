@@ -1,6 +1,6 @@
 # Pulse Boilerplate
 
-This is React based boilerplate, which consist a progressive packages and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+This is React based boilerplate, which consist a progressive tools and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
 
 ## Features
 
@@ -13,32 +13,44 @@ This is React based boilerplate, which consist a progressive packages and basic 
 
 ## Setup
 
-Install dependencies
+#### Install dependencies
 ```sh
 yarn
 ```
+*Note: we recommend use [`yarn` package manager](https://yarnpkg.com/), but if you more like `npm` you can also do it!*
 
-Run development server ([http://localhost:8080](http://localhost:8080))
+#### Run development server
 ```sh
 yarn dev
 ```
 
-Generate production build (will be create a `dist` folder)
+*Project will be runned at [http://localhost:8080/](http://localhost:8080/)*
+
+#### Generate production build
 ```sh
 yarn build
 ```
 
-## React Styleguide and Documentation
+*Will be created a `dist` folder*
 
-Run development server ([http://localhost:6060](http://localhost:6060))
+## Style guide and documentation
+
+#### Run development server
 ```sh
 yarn styleguidist
 ```
 
-Generate production build (will be create a `docs` folder)
+*Styleguidist will be runned at [http://localhost:6060/](http://localhost:6060/)*
+
+#### Generate production build
 ```sh
 yarn styleguidist:build
 ```
+
+*Will be created a `docs` folder*
+
+#### How can I add component to the style guide?
+You need to create a Readme.md file (inside the component folder) and put there your action code. See [examples](https://react-styleguidist.js.org/docs/documenting#usage-examples-and-readme-files).
 
 ## ESLint
 
@@ -47,9 +59,8 @@ Run and get code review (you can pass a `--fix` setting to try solve a problem a
 yarn lint
 ```
 
-## What is Atomic Design?
-
-Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. If you want to get more info about methodology, check out the [article](http://atomicdesign.bradfrost.com/chapter-2/).
+## Theme
+...
 
 ## Import components
 
@@ -58,6 +69,10 @@ You can very easily import your component, where you need, and do not worry abou
 ```js
 import { Button, Input } from 'components';
 ```
+
+## A few words about Atomic Design
+
+Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. To get more info about methodology, check out [the article](http://atomicdesign.bradfrost.com/chapter-2/).
 
 ## TODO
 
