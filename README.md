@@ -1,10 +1,15 @@
 # Pulse Boilerplate
 
-This is React based boilerplate, which consist a progressive packages: webpack@4, react@16, eslint (airbnb config), [prettier](https://prettier.io/), [styled-components](https://www.styled-components.com/), [react-styleguidist](https://react-styleguidist.js.org/) and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+This is React based boilerplate, which consist a progressive packages and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
 
 ## Features
 
-## 
+- webpack@4
+- react@16
+- eslint ([airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)) — code linter
+- [prettier](https://prettier.io/) — code formatter
+- [styled-components](https://www.styled-components.com/) — css-in-js
+- [react-styleguidist](https://react-styleguidist.js.org/) — isolated style guide 
 
 ## Setup
 
@@ -44,7 +49,7 @@ yarn lint
 
 ## What is Atomic Design?
 
-Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. If you want to get more info, check [this article](http://atomicdesign.bradfrost.com/chapter-2/).
+Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. If you want to get more info about methodology, check out the [article](http://atomicdesign.bradfrost.com/chapter-2/).
 
 ## Import components
 

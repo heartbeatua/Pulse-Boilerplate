@@ -3,12 +3,6 @@ const path = require('path');
 module.exports = {
   title: 'Atomic Design Components',
   components: 'src/components/**/*.js',
-  ignore: [
-    '**/src/components/pages/**/*',
-    '**/src/components/themes/**/*',
-    '**/src/components/index.js',
-    '**/src/components/App.js'
-  ],
 
   getComponentPathLine(filePath) {
     const componentPath = filePath.replace(/\/index.js/, '');
@@ -34,7 +28,7 @@ module.exports = {
     {
       name: 'Atoms',
       components: 'src/components/atoms/**/*.js',
-      exampleMode: 'expand', // 'hide' | 'collapse' | 'expand'
+      exampleMode: 'expand',
       usageMode: 'expand'
     }
   ],
