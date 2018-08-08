@@ -1,11 +1,21 @@
 # Pulse Boilerplate
 
-This is React based boilerplate, which consist a progressive tools and basic atomic design structure. Based on [Atomic Design methodology](http://bradfrost.com/blog/post/atomic-web-design/).
+This is React based boilerplate, which consist a progressive tools and basic [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) structure.
 
 ## Features
 
+- Contains all the latest tools and practices
+- Focused on [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) methodology
+- Clear and understandable structure of folders
+- Creating application, website, [documentation of components](https://react-styleguidist.js.org/).
+- Easy to customizing (themes, pages, templates)
+- Very easily importing components (see below)
+
+## What's included
+
 - webpack@4
-- react@16
+- react@16, react-router@4
+- hot-reloading
 - eslint ([airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)) — code linter
 - [prettier](https://prettier.io/) — code formatter
 - [styled-components](https://www.styled-components.com/) — css-in-js
