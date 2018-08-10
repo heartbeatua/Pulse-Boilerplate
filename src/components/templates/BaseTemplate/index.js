@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
-const font = ({ theme }) => theme.font.primary;
-const colorBase = ({ theme }) => theme.palette.black;
+import { themeGet } from 'styled-system';
 
 const Wrapper = styled.div`
   max-width: 600px;
   margin: 0 auto;
   padding: 15px;
-  font-family: ${font};
-  color: ${colorBase};
+  font-family: ${themeGet('fonts.primary')};
+  font-size: ${themeGet('fontSizes.2')}px;
+  color: ${themeGet('colors.black')};
 `;
 
 const Base = ({ header, children }) => (

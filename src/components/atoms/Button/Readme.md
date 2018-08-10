@@ -3,5 +3,5 @@
 ```
 
 ```js
-<Button skin="outline" size="l" palette="cta">Button</Button>
+<Button color="cta" skin="outline" size="l">Button</Button>
 ```

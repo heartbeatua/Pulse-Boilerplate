@@ -3,7 +3,9 @@ import { BaseTemplate, Header } from 'components';
 
 const Home = () => (
   <BaseTemplate header={<Header />}>
-    <div>home page content</div>
+    <div>
+      <p>home page</p>
+    </div>
   </BaseTemplate>
 );
 

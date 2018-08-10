@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Atomic Design Components',
+  title: 'Pulse Components',
   components: 'src/components/**/*.js',
 
   getComponentPathLine(filePath) {
@@ -17,6 +17,7 @@ module.exports = {
   styles: {
     StyleGuide: {
       '@global body': {
+        'font-family': 'Helvetica Neue, Helvetica, sans-serif',
         '-webkit-font-smoothing': 'antialiased',
         '-moz-osx-font-smoothing': 'grayscale'
       }
@@ -28,8 +29,7 @@ module.exports = {
     {
       name: 'Atoms',
       components: 'src/components/atoms/**/*.js',
-      exampleMode: 'expand',
-      usageMode: 'expand'
+      exampleMode: 'expand'
     }
   ],
 
