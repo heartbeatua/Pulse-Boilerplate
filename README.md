@@ -10,6 +10,7 @@ This is React based boilerplate, which consist a progressive tools and basic [At
 - Creating application, website, [documentation of components](https://react-styleguidist.js.org/).
 - Easy to customizing (themes, pages, templates)
 - Very easily importing components (see below)
+- Comfortable work with styles
 
 ## What's included
 
@@ -18,8 +19,10 @@ This is React based boilerplate, which consist a progressive tools and basic [At
 - hot-reloading
 - eslint ([airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)) — code linter
 - [prettier](https://prettier.io/) — code formatter
-- [styled-components](https://www.styled-components.com/) — css-in-js
 - [react-styleguidist](https://react-styleguidist.js.org/) — isolated style guide 
+- [styled-components](https://www.styled-components.com/) — css-in-js
+- [styled-system](https://github.com/jxnblk/styled-system) — styling your components at advanced level
+- [grid-styled](https://github.com/jxnblk/grid-styled) — building powerful and flexible layout
 
 ## Setup
 
@@ -69,8 +72,9 @@ Run and get code review (you can pass a `--fix` setting to try solve a problem a
 yarn lint
 ```
 
-## Theme
-...
+## Theming
+Based on [styled system theming](https://github.com/jxnblk/styled-system/blob/master/docs/getting-started.md#theming). Styled system is a great utility to provide work with any color palette, quickly setting [responsive](https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md) font-size, margin, padding, width, [etc](https://github.com/jxnblk/styled-system/blob/master/docs/table.md). More info you can see from the [official source](https://github.com/jxnblk/styled-system/blob/master/docs/api.md).
+
 
 ## Import components
 
@@ -87,9 +91,8 @@ Atomic design is a methodology composed of five distinct stages working together
 ## TODO
 
 - [x] Styled components
-- [ ] Styled themes
-- [ ] styled-system
-- [ ] grid-styled
+- [x] styled-system
+- [x] grid-styled
 - [x] React styleguidist
 - [ ] Redux
 - [ ] Tests (Jest)
