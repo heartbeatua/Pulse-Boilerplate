@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import tag from 'clean-tag';
 
-const Wrapper = styled.nav``;
+const Wrapper = styled(tag.nav)``;
 const List = styled.ul`
   list-style: none;
   margin: 0;
@@ -22,8 +23,8 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const Nav = () => (
-  <Wrapper>
+const Nav = props => (
+  <Wrapper {...props}>
     <List>
       <Item>
         <StyledLink exact to="/" activeClassName="active">

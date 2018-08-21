@@ -16,6 +16,9 @@ module.exports = {
   },
   styles: {
     StyleGuide: {
+      '@global *': {
+        'box-sizing': 'border-box'
+      },
       '@global body': {
         'font-family': 'Helvetica Neue, Helvetica, sans-serif',
         '-webkit-font-smoothing': 'antialiased',

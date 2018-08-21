@@ -4,11 +4,9 @@ import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 
 const Wrapper = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 15px;
   font-family: ${themeGet('fonts.primary')};
   font-size: ${themeGet('fontSizes.2')}px;
+  line-height: 1.5;
   color: ${themeGet('colors.black')};
 `;
 

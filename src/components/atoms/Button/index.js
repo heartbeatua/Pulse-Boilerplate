@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
+import tag from 'clean-tag';
 
 const palette = ({ color }) => themeGet(`colors.${color}`);
 const width = ({ wide }) => (wide ? '100%' : null);
@@ -48,7 +49,7 @@ const styles = css`
 const Anchor = styled.a`
   ${styles};
 `;
-const StyledButton = styled.button`
+const StyledButton = styled(tag.button)`
   ${styles};
 `;
 

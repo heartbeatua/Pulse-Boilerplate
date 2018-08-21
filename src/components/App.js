@@ -3,9 +3,13 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 import { injectGlobal, ThemeProvider } from 'styled-components';
 import { HomePage, AboutPage } from 'components';
-import theme from './themes';
+import theme from './theme';
 
 injectGlobal`
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
