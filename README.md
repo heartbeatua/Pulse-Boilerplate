@@ -93,11 +93,11 @@ Atomic design is a methodology composed of five distinct stages working together
 - [x] Styled components
 - [x] styled-system
 - [x] grid-styled
-- [x] React styleguidist
+- [x] React styleguidist (change to https://github.com/c8r/x0)
 - [ ] Redux
 - [ ] Tests (Jest)
 - [ ] Utils and Build tools (like favicon generator, etc)
-- [ ] Awesome-XXX links
+- [ ] Articles/Goodness
 - [ ] Generact (for copy components)
 
 
