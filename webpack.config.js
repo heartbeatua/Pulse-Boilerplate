@@ -18,11 +18,6 @@ const config = {
     filename: `js/[name]${!devMode ? '.[hash:8]' : ''}.js`,
     publicPath: '/'
   },
-  resolve: {
-    alias: {
-      components: path.resolve(__dirname, 'src/components')
-    }
-  },
   module: {
     rules: [
       {
@@ -43,9 +38,7 @@ const config = {
         test: /\.(png|jpg|svg|gif)$/,
         loader: 'file-loader',
         options: {
-          name: `img/[name]${!devMode ? '.[hash:8]' : ''}.[ext]${
-            devMode ? '?[hash:8]' : ''
-          }`
+          name: 'img/[name].[hash:8].[ext]'
         }
       },
       {

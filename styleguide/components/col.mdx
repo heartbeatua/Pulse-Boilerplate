@@ -1,0 +1,40 @@
+import Col from '../../src/components/atoms/Col';
+import Text from '../../src/components/atoms/Text';
+import Link from '../../src/components/atoms/Link';
+import PropsTable from '../../src/components/molecules/propsTable';
+
+# Col
+
+<PropsTable component={Col} />
+
+```.mdx
+<Container>
+  <Row>
+    <Col><Box bg="grayscale.400">auto</Box></Col>
+    <Col width="contains"><Box bg="grayscale.400">contains</Box></Col>
+  </Row>
+</Container>
+```
+
+```.mdx
+<Container>
+  <Row>
+    <Col width={1 / 3}><Box bg="grayscale.400">33.333%</Box></Col>
+    <Col width={1 / 3}><Box bg="grayscale.400">33.333%</Box></Col>
+    <Col width={1 / 3}><Box bg="grayscale.400">33.333%</Box></Col>
+  </Row>
+</Container>
+```
+
+Responsive styles (<Link href="https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md" target="_blank">read more...</Link>)
+
+```.mdx
+<Container>
+  <Row>
+    <Col width={[1, 1/2, 1/4]}><Box bg="grayscale.400">col</Box></Col>
+    <Col width={[1, 1/2, 1/4]}><Box bg="grayscale.400">col</Box></Col>
+    <Col width={[1, 1/2, 1/4]}><Box bg="grayscale.400">col</Box></Col>
+    <Col width={[1, 1/2, 1/4]}><Box bg="grayscale.400">col</Box></Col>
+  </Row>
+</Container>
+```

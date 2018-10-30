@@ -1,6 +1,8 @@
 .DS_Store
 .idea
 
+/docs
+/trash
 /dist
 /node_modules
 
@@ -9,3 +11,4 @@
 /yarn-error.log*
 
 *.tmp
+*.sh

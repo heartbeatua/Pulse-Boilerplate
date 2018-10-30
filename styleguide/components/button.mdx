@@ -1,0 +1,46 @@
+import Button from '../../src/components/atoms/Button';
+import PropsTable from '../../src/components/molecules/propsTable';
+
+# Button
+
+<PropsTable component={Button} />
+
+### Black (filled)
+```.mdx
+<Button>submit</Button>
+```
+
+### Black (outlined)
+```.mdx
+<Button skin="outline">go up</Button>
+```
+
+### CTA
+```.mdx
+<Button color="cta">read more</Button>
+```
+
+### Brand
+```.mdx
+<Button color="brand">say hello</Button>
+```
+
+### Wide and disabled
+```.mdx
+<Button wide disabled>wide button</Button>
+```
+
+### Target
+```.mdx
+<Button kind="target" wide color="cta">king size</Button>
+```
+
+### Link
+```.mdx
+<Button href="https://github.com/heartbeatua/Pulse-Boilerplate" target="_blank">open github</Button>
+```
+
+### Route
+```.mdx
+<Button to="/">go home</Button>
+```
