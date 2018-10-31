@@ -1,0 +1,8 @@
+{
+  "webpack.config.js": "node_modules/.bin/eslint --fix",
+  "styleguide.config.js": "node_modules/.bin/eslint --fix",
+  ".eslintrc.js": "node_modules/.bin/eslint --fix",
+  ".babelrc.js": "node_modules/.bin/eslint --fix",
+  "src/**/*.{js,mjs,jsx}": "node_modules/.bin/eslint --fix",
+  "build/**/*.js": "node_modules/.bin/eslint --fix"
+}
