@@ -1,16 +1,17 @@
 # Pulse Boilerplate
 
-This is React based boilerplate, which consist a progressive tools and basic [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) structure.
+We've created this React based boilerplate during our research on Design System approach.
+It consists of modern tools and basic [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) structure.
 
 ## Features
 
-- Contains all the latest tools and practices
-- Focused on [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) methodology
+- Up to date tools and practices for Design System creation
+- Focused on [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) methodology and naming convention
 - Clear and understandable structure of folders
-- Creating application, website, [documentation of components](https://github.com/c8r/x0/).
-- Easy to customizing (themes, pages, templates)
-- Very easily importing components (see below)
-- Comfortable work with styles
+- With online [documentation of components](https://github.com/c8r/x0/).
+- Highlt customizable: themes, pages, templates
+- Handy components import (see below)
+- Easy work with styles
 
 ## What's included
 
@@ -21,7 +22,7 @@ This is React based boilerplate, which consist a progressive tools and basic [At
 - [prettier](https://prettier.io/) — code formatter
 - [x0](https://github.com/c8r/x0/) — style guide 
 - [styled-components](https://www.styled-components.com/) — css-in-js
-- [styled-system](https://github.com/jxnblk/styled-system) — styling your components at advanced level
+- [styled-system](https://github.com/jxnblk/styled-system) — style your components at the advanced level
 
 ## Setup
 
@@ -29,51 +30,51 @@ This is React based boilerplate, which consist a progressive tools and basic [At
 ```sh
 yarn
 ```
-*Note: we recommend use [`yarn` package manager](https://yarnpkg.com/), but if you more like `npm` you can also do it!*
+*Note: we recommend to use [`yarn` package manager](https://yarnpkg.com/), but `npm` is OK*
 
 #### Run development server
 ```sh
 yarn dev
 ```
 
-*Project will be runned at [http://localhost:8080/](http://localhost:8080/)*
+*Project will be running at [http://localhost:8080/](http://localhost:8080/)*
 
 #### Generate production build
 ```sh
 yarn build
 ```
 
-*Will be created a `dist` folder*
+*Will create the `dist` folder*
 
 ## Style guide and documentation
 
-#### Run development server
+#### Run a development server
 ```sh
 yarn guide
 ```
 
-*Styleguidist will be runned at [http://localhost:6060/](http://localhost:6060/)*
+*Styleguidist will run at [http://localhost:6060/](http://localhost:6060/)*
 
 #### Generate production build
 ```sh
 yarn guide:build
 ```
 
-*Will be created a `docs` folder*
+*`docs` folder will be created*
 
 ## ESLint
 
-Run and get code review (you can pass a `--fix` setting to try solve a problem automatically)
+Run and get code review (you can pass a `--fix` setting that will try to solve a problem automatically)
 ```sh
 yarn lint
 ```
 
 ## Theming
-Based on [styled system theming](https://github.com/jxnblk/styled-system/blob/master/docs/getting-started.md#theming). Styled system is a great utility to provide work with any color palette, quickly setting [responsive](https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md) font-size, margin, padding, width, [etc](https://github.com/jxnblk/styled-system/blob/master/docs/table.md). More info you can see from the [official source](https://github.com/jxnblk/styled-system/blob/master/docs/api.md).
+We use [styled system theming](https://github.com/jxnblk/styled-system/blob/master/docs/getting-started.md#theming). Styled system is great theme-based style props for building [responsive](https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md) design systems with React. More data [here](https://github.com/jxnblk/styled-system/blob/master/docs/api.md).
 
 ## A few words about Atomic Design
 
-Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. To get more info about methodology, check out [the article](http://atomicdesign.bradfrost.com/chapter-2/).
+Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are: __atoms__, __molecules__, __organisms__, __templates__, __pages__. To get more info about methodology, check out [the original article](http://atomicdesign.bradfrost.com/chapter-2/).
 
 ## TODO
 
@@ -86,6 +87,8 @@ Atomic design is a methodology composed of five distinct stages working together
 - [ ] Awesome-XXX links
 - [ ] Generact (for copy components)
 
+## Got questions or suggestions?
+Simply reach through [our website](https://heartbeat.ua/lets-talk)
 
 ## License
 
