@@ -16,7 +16,7 @@ const Title = atoms.Title;
 const Text = atoms.Text;
 
 const BaseStyles = styled.div`
-  font-family: ${themeGet('fonts.primary')};
+  font-family: ${themeGet('fonts.bodyText')};
   color: ${themeGet('colors.black')};
   line-height: ${themeGet('lineHeights.l')};
 `;
@@ -47,7 +47,7 @@ const Menu = styled.ul`
   padding: 0;
   margin: 0 0 0 8px;
   width: 180px;
-  font-size: ${themeGet('fontSizes.l')}px;
+  font-size: ${themeGet('fontSizes.m')}px;
 `;
 const Item = styled.li`
   margin-bottom: 23px;
@@ -84,6 +84,7 @@ const SubMenuItem = styled.li`
   a {
     padding-left: 20px;
     border-left: 4px solid transparent;
+    font-size: ${themeGet('fontSizes.s')}px;
     &.active {
       border-color: ${themeGet('colors.brand')};
     }

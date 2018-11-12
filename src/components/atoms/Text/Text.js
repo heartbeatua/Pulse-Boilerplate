@@ -14,7 +14,7 @@ Text.propTypes = {
 };
 Text.defaultProps = {
   is: 'p',
-  fontSize: 'l',
+  fontSize: 'm',
   m: '0 0 1.1em'
 };
 

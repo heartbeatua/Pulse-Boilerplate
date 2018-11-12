@@ -18,10 +18,18 @@ const Typo = () => (
           Josefin Sans
         </Title>
         <Text fontSize="m" m={0}>
-          Main font
+          Headings
         </Text>
       </Box>
       <Divider width="1px" height="62px" m="0 45px" />
+      <Box>
+        <Title is="h3" size="h5" m="0">
+          Open Sans
+        </Title>
+        <Text fontSize="m" m={0}>
+          Body text
+        </Text>
+      </Box>
     </Flex>
     <Divider m="0 0 50px" />
     <Title is="h1" size="h1" m="0 0 10px">
@@ -62,14 +70,14 @@ const Typo = () => (
       {theme.fontSizes.heading.h5}
       pt
     </Text>
-    <Text m="0">Content</Text>
+    <Text m="0">Body text</Text>
     <Text color="#ababab" fontSize="m">
       {' '}
       {theme.fontSizes.l}
       pt
     </Text>
     <Text fontSize="m" m="0">
-      Content
+      Body text
     </Text>
     <Text color="#ababab" fontSize="m">
       {' '}
@@ -77,7 +85,7 @@ const Typo = () => (
       pt
     </Text>
     <Text fontSize="s" m="0">
-      Content
+      Body text
     </Text>
     <Text color="#ababab" fontSize="m">
       {' '}
@@ -85,7 +93,7 @@ const Typo = () => (
       pt
     </Text>
     <Text fontSize="xs" m="0">
-      Small text
+      Body text Small
     </Text>
     <Text color="#ababab" fontSize="m">
       {' '}

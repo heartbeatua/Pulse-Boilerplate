@@ -22,7 +22,8 @@ Title.defaultProps = {
   is: 'h2',
   size: 'h2',
   fontWeight: 'bold',
-  m: '0 0 30px'
+  m: '0 0 30px',
+  fontFamily: 'title'
 };
 
 export default Title;

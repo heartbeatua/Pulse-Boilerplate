@@ -21,7 +21,8 @@ const colors = {
 };
 
 const fonts = {
-  primary: "'Josefin Sans', sans-serif"
+  title: "'Josefin Sans', sans-serif",
+  bodyText: "'Open Sans', sans-serif"
 };
 
 const fontSizes = {
