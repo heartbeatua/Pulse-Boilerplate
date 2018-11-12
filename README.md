@@ -53,7 +53,7 @@ yarn build
 yarn guide
 ```
 
-*Styleguidist will run at [http://localhost:6060/](http://localhost:6060/)*
+*Style guide will run at [http://localhost:6060/](http://localhost:6060/)*
 
 #### Generate production build
 ```sh
