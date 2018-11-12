@@ -138,6 +138,8 @@ const App = props => {
   const { children, routes, route } = props;
   const routesSortedList = [
     'index',
+    'core-values',
+    'principles',
     'introduction',
     'style',
     'components'

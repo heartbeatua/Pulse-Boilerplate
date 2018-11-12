@@ -13,6 +13,8 @@ import logo from './img/logo.svg';
 import bg from './img/footer_illustration.svg';
 import iconStyle from './img/icons/style.svg';
 import iconComp from './img/icons/components.svg';
+import iconCoreValue from './img/icons/core-values.svg';
+import iconPrinciples from './img/icons/principles.svg';
 
 const Content = styled(Box)`
   display: block;
@@ -33,11 +35,11 @@ const Home = () => (
     </Box>
     <Content style={{ backgroundImage: `url(${bg})` }} pb="350px">
       <Container>
-        <Title is="h1" size="h1" m="0 0 85px -12px">
+        <Title is="h1" size="h1" m="0 0 85px -8px">
           .pulse
         </Title>
-        <Title is="h2" size="h5" m="0 0 85px">
-          Boilerplate
+        <Title is="h2" size="h4" m="0 0 85px">
+          React based boilerplate for creating scalable and well documented Design Systems.
         </Title>
         <Card
           to="/introduction"
@@ -47,8 +49,33 @@ const Home = () => (
           mb="72px"
           p="88px"
         />
+        <Row
+          gap={72}>
+          <Col
+            mb="72px"
+            width={['auto']}>
+            <Card
+              to="/core-values"
+              title="Core Values"
+              text="Core values are the fundamental beliefs of a person or organization."
+              icon={iconCoreValue}
+            />
+          </Col>
+          <Col
+            mb="72px"
+            width={['auto']}>
+            <Card
+              to="/principles"
+              title="Principles"
+              text="Design Principles are widely applicable laws, guidelines, biases and design considerations."
+              icon={iconPrinciples}
+            />
+          </Col>
+        </Row>
         <Row gap={72}>
-          <Col width={['auto']}>
+          <Col
+            mb="72px"
+            width={['auto']}>
             <Card
               to="/style"
               title="Style"
