@@ -33,8 +33,11 @@ const Home = () => (
     </Box>
     <Content style={{ backgroundImage: `url(${bg})` }} pb="350px">
       <Container>
-        <Title is="h1" size="h1" m="0 0 85px">
-          Pulse Boilerplate
+        <Title is="h1" size="h1" m="0 0 85px -12px">
+          .pulse
+        </Title>
+        <Title is="h2" size="h5" m="0 0 85px">
+          Boilerplate
         </Title>
         <Card
           to="/introduction"
