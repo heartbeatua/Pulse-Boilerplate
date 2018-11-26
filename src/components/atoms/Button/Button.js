@@ -95,15 +95,14 @@ const StyledButton = styled(tag.button)`
   ${styles};
 `;
 
-const Button = props => {
-  const { to, href, type } = props;
-  let btn = <StyledButton {...props} type={type || 'button'} />;
+const Button = ({ to, href, type, wide, ...rest }) => {
   if (to) {
-    btn = <StyledNavLink {...props} />;
-  } else if (href) {
-    btn = <StyledLink {...props} />;
+    return <StyledNavLink to={to} wide={wide ? 1 : 0} {...rest} />;
   }
-  return btn;
+  if (href) {
+    return <StyledLink href={href} wide={wide ? 1 : 0} {...rest} />;
+  }
+  return <StyledButton wide={wide ? 1 : 0} type={type} {...rest} />;
 };
 
 Button.propTypes = {
@@ -116,14 +115,16 @@ Button.propTypes = {
   wide: PropTypes.bool,
   disabled: PropTypes.bool,
   href: PropTypes.string,
-  to: PropTypes.string
+  to: PropTypes.string,
+  type: PropTypes.oneOf(['submit', 'button'])
 };
 
 Button.defaultProps = {
   color: 'black',
   size: 'm',
   skin: 'fill',
-  kind: 'normal'
+  kind: 'normal',
+  type: 'button'
 };
 
 export default Button;

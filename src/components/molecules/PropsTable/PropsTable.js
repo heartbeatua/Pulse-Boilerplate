@@ -9,7 +9,7 @@ import Link from '../../atoms/Link/index';
 const StyledTable = styled(tag.table)`
   border-collapse: collapse;
   text-align: left;
-  font-size: 18px;
+  font-size: 1em;
   margin: 0 0 40px;
   td,
   th {

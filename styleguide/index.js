@@ -39,7 +39,8 @@ const Home = () => (
           .pulse
         </Title>
         <Title is="h2" size="h4" m="0 0 85px">
-          React based boilerplate for creating scalable and well documented Design Systems.
+          React based boilerplate for creating scalable and well documented
+          Design Systems.
         </Title>
         <Card
           to="/introduction"
@@ -49,11 +50,8 @@ const Home = () => (
           mb="72px"
           p="88px"
         />
-        <Row
-          gap={72}>
-          <Col
-            mb="72px"
-            width={['auto']}>
+        <Row gap={72}>
+          <Col mb="72px" width={['auto']}>
             <Card
               to="/core-values"
               title="Core Values"
@@ -61,9 +59,7 @@ const Home = () => (
               icon={iconCoreValue}
             />
           </Col>
-          <Col
-            mb="72px"
-            width={['auto']}>
+          <Col mb="72px" width={['auto']}>
             <Card
               to="/principles"
               title="Principles"
@@ -73,9 +69,7 @@ const Home = () => (
           </Col>
         </Row>
         <Row gap={72}>
-          <Col
-            mb="72px"
-            width={['auto']}>
+          <Col mb="72px" width={['auto']}>
             <Card
               to="/style"
               title="Style"
