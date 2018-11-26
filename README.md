@@ -1,3 +1,5 @@
+![Pulse](https://raw.githubusercontent.com/heartbeatua/Pulse-Boilerplate/master/tmp/cover.png)
+
 # Pulse Boilerplate
 
 We've created this React based boilerplate during our research on Design System approach.
