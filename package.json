@@ -4,10 +4,10 @@
   "description": "React based boilerplate for creating scalable and well documented Design Systems.",
   "main": "src/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --mode development --inline --hot",
-    "build": "NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
     "guide": "x0 styleguide -op 6060",
-    "guide:build": "NODE_ENV=production x0 build styleguide -d docs",
+    "guide:build": "cross-env NODE_ENV=production x0 build styleguide -d docs",
     "eslint": "eslint src webpack.config.js styleguide.config.js",
     "staged": "node_modules/.bin/lint-staged"
   },
@@ -27,6 +27,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.1.0",
