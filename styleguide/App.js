@@ -2,13 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
-import { ScopeProvider } from '@compositor/x0/components';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import { ScopeProvider } from '@compositor/x0/components';
 import { themeGet } from 'styled-system';
 import { find, compact, sortBy } from 'lodash';
-import * as atoms from '../../src/components';
-import theme from '../../src/theme';
-import css from '../../src/css/base.css';
-import Sidebar from '../src/components/molecules/Sidebar';
+import * as atoms from '../src/components';
+import theme from '../src/theme';
+import routes from './routes';
+// import css from '../src/css/base.css';
+// import Sidebar from './src/components/molecules/Sidebar';
 
 const Box = atoms.Box;
 const Title = atoms.Title;
@@ -83,36 +85,24 @@ const markdown = {
   )
 };
 
-const App = props => {
-  const { children, routes, route } = props;
-
-  return (
-    <ScopeProvider scope={{ ...markdown, ...atoms }}>
-      <ThemeProvider theme={theme}>
-        <BaseStyles>
-          <style dangerouslySetInnerHTML={{ __html: css }} />
-          <style
-            dangerouslySetInnerHTML={{
-              __html: '.img-fluid {max-width: 100%;}'
-            }}
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <Switch>
+        {routes.map(({ key, path, component: Component }) => (
+          <Route
+            exact
+            key={key}
+            path={path}
+            render={props => (
+              <Component {...props} />
+            )}
           />
-          {route.name !== 'index' ? (
-            <LayoutInner>
-              <Sidebar />
-              <Content>
-                <Box maxWidth="1072px">{children}</Box>
-              </Content>
-            </LayoutInner>
-          ) : (
-            <div>
-              {children}
-            </div>
-          )}
-        </BaseStyles>
-      </ThemeProvider>
-    </ScopeProvider>
-  );
-};
+        ))}
+      </Switch>
+    </BrowserRouter>
+  </ThemeProvider>
+);
 
 App.propTypes = {
   children: PropTypes.node,
