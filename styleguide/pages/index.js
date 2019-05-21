@@ -9,12 +9,12 @@ import Row from '../../src/components/atoms/Row';
 import Container from '../../src/components/atoms/Container';
 import Divider from '../../src/components/atoms/Divider';
 import Link from '../../src/components/atoms/Link';
-import logo from '../img/logo.svg';
-import bg from '../img/footer_illustration.svg';
-import iconStyle from '../img/icons/style.svg';
-import iconComp from '../img/icons/components.svg';
-import iconCoreValue from '../img/icons/core-values.svg';
-import iconPrinciples from '../img/icons/principles.svg';
+import logo from '../src/assets/img/logo.svg';
+import bg from '../src/assets/img/footer_illustration.svg';
+import iconStyle from '../src/assets/img/icons/style.svg';
+import iconComp from '../src/assets/img/icons/components.svg';
+import iconCoreValue from '../src/assets/img/icons/core-values.svg';
+import iconPrinciples from '../src/assets/img/icons/principles.svg';
 
 const Content = styled(Box)`
   display: block;

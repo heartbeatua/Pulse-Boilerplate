@@ -9,7 +9,7 @@ import { find, compact, sortBy } from 'lodash';
 import * as atoms from '../../src/components';
 import theme from '../../src/theme';
 import css from '../../src/css/base.css';
-import logo from './../img/logo.svg';
+import logo from '../src/assets/img/logo.svg';
 
 const Box = atoms.Box;
 const Title = atoms.Title;
