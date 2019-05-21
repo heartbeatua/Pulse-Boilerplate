@@ -6,15 +6,15 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --mode production",
-    "guide": "x0 styleguide -op 6060",
-    "guide:build": "cross-env NODE_ENV=production x0 build styleguide -d docs",
+    "guide": "x0 styleguide/pages -op 6060",
+    "guide:build": "cross-env NODE_ENV=production x0 build styleguide/pages -d docs",
     "eslint": "eslint src webpack.config.js styleguide.config.js",
     "staged": "node_modules/.bin/lint-staged"
   },
   "author": "Heartbeat agency",
   "license": "MIT",
   "x0": {
-    "template": "./styleguide/_html.js"
+    "template": "./styleguide/pages/_html.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

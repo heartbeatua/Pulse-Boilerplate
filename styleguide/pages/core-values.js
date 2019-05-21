@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Title from '../src/components/atoms/Title';
-import Text from '../src/components/atoms/Text';
+import Title from '../../src/components/atoms/Title';
+import Text from '../../src/components/atoms/Text';
 
 export default () => (
   <Fragment>

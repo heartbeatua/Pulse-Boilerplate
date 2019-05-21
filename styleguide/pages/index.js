@@ -1,20 +1,20 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Box from '../src/components/atoms/Box';
-import Text from '../src/components/atoms/Text';
-import Title from '../src/components/atoms/Title';
-import Card from '../src/components/molecules/Card';
-import Col from '../src/components/atoms/Col';
-import Row from '../src/components/atoms/Row';
-import Container from '../src/components/atoms/Container';
-import Divider from '../src/components/atoms/Divider';
-import Link from '../src/components/atoms/Link';
-import logo from './img/logo.svg';
-import bg from './img/footer_illustration.svg';
-import iconStyle from './img/icons/style.svg';
-import iconComp from './img/icons/components.svg';
-import iconCoreValue from './img/icons/core-values.svg';
-import iconPrinciples from './img/icons/principles.svg';
+import Box from '../../src/components/atoms/Box';
+import Text from '../../src/components/atoms/Text';
+import Title from '../../src/components/atoms/Title';
+import Card from '../../src/components/molecules/Card';
+import Col from '../../src/components/atoms/Col';
+import Row from '../../src/components/atoms/Row';
+import Container from '../../src/components/atoms/Container';
+import Divider from '../../src/components/atoms/Divider';
+import Link from '../../src/components/atoms/Link';
+import logo from '../img/logo.svg';
+import bg from '../img/footer_illustration.svg';
+import iconStyle from '../img/icons/style.svg';
+import iconComp from '../img/icons/components.svg';
+import iconCoreValue from '../img/icons/core-values.svg';
+import iconPrinciples from '../img/icons/principles.svg';
 
 const Content = styled(Box)`
   display: block;

@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Box from '../../src/components/atoms/Box/Box';
-import Flex from '../../src/components/atoms/Flex/Flex';
-import Text from '../../src/components/atoms/Text/Text';
-import Title from '../../src/components/atoms/Title/Title';
-import theme from '../../src/theme';
+import Box from '../../../src/components/atoms/Box/Box';
+import Flex from '../../../src/components/atoms/Flex/Flex';
+import Text from '../../../src/components/atoms/Text/Text';
+import Title from '../../../src/components/atoms/Title/Title';
+import theme from '../../../src/theme';
 
 const ColorBox = styled(Box)`
   width: 122px;

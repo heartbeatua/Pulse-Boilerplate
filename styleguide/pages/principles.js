@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import Title from '../src/components/atoms/Title';
-import Text from '../src/components/atoms/Text';
+import Title from '../../src/components/atoms/Title';
+import Text from '../../src/components/atoms/Text';
 
 export default () => (
   <Fragment>
     <Title is="h1" m="0 0 50px">
-      Pulse Boilerplate
+      Principles
     </Title>
     <Text maxWidth="700px">
       Pulse Boilerplate is a react based advanced tool, which can help you build

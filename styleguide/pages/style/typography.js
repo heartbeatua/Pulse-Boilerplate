@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import Box from '../../src/components/atoms/Box/Box';
-import Flex from '../../src/components/atoms/Flex/Flex';
-import Text from '../../src/components/atoms/Text/Text';
-import Title from '../../src/components/atoms/Title/Title';
-import Divider from '../../src/components/atoms/Divider';
-import theme from '../../src/theme';
+import Box from '../../../src/components/atoms/Box/Box';
+import Flex from '../../../src/components/atoms/Flex/Flex';
+import Text from '../../../src/components/atoms/Text/Text';
+import Title from '../../../src/components/atoms/Title/Title';
+import Divider from '../../../src/components/atoms/Divider';
+import theme from '../../../src/theme';
 
 const Typo = () => (
   <Fragment>
