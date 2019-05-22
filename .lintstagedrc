@@ -1,8 +1,7 @@
 {
-  "webpack.config.js": "node_modules/.bin/eslint --fix",
-  "styleguide.config.js": "node_modules/.bin/eslint --fix",
-  ".eslintrc.js": "node_modules/.bin/eslint --fix",
-  ".babelrc.js": "node_modules/.bin/eslint --fix",
-  "src/**/*.{js,mjs,jsx}": "node_modules/.bin/eslint --fix",
-  "build/**/*.js": "node_modules/.bin/eslint --fix"
+  ".eslintrc": "node_modules/.bin/eslint --fix",
+  ".babelrc": "node_modules/.bin/eslint --fix",
+  "src/**/*.{js,jsx}": "node_modules/.bin/eslint --fix",
+  "styleguide/**/*.{js,jsx}": "node_modules/.bin/eslint --fix",
+  "webpack/**/*.{js,jsx}": "node_modules/.bin/eslint --fix"
 }
