@@ -18,7 +18,6 @@ import {
   height,
   maxHeight,
   minHeight,
-  ratio,
   verticalAlign,
   alignItems,
   justifyContent,
@@ -62,7 +61,7 @@ import {
   left,
   textStyle,
   colorStyle,
-  buttonStyle,
+  buttonStyle
 } from 'styled-system';
 
 const StyledBox = styled(tag)`
@@ -82,7 +81,6 @@ const StyledBox = styled(tag)`
   ${height};
   ${maxHeight};
   ${minHeight};
-  ${ratio};
   ${verticalAlign};
   ${alignItems};
   ${justifyContent};
@@ -148,7 +146,6 @@ Box.propTypes = {
   ...height.propTypes,
   ...maxHeight.propTypes,
   ...minHeight.propTypes,
-  ...ratio.propTypes,
   ...verticalAlign.propTypes,
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
@@ -192,7 +189,7 @@ Box.propTypes = {
   ...left.propTypes,
   ...textStyle.propTypes,
   ...colorStyle.propTypes,
-  ...buttonStyle.propTypes,
+  ...buttonStyle.propTypes
 };
 
 export default Box;

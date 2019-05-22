@@ -1,106 +1,107 @@
-import React, { Fragment } from 'react';
-import Box from '../../../src/components/atoms/Box/Box';
-import Flex from '../../../src/components/atoms/Flex/Flex';
-import Text from '../../../src/components/atoms/Text/Text';
-import Title from '../../../src/components/atoms/Title/Title';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withTheme } from 'styled-components';
+import Box from '../../../src/components/atoms/Box';
+import Flex from '../../../src/components/atoms/Flex';
+import Text from '../../../src/components/atoms/Text';
+import Title from '../../../src/components/atoms/Title';
 import Divider from '../../../src/components/atoms/Divider';
-import theme from '../../../src/theme';
 
-const Typo = () => (
-  <Fragment>
-    <Title is="h2" size="h4" m="0 0 20px">
+const Typography = ({ theme }) => (
+  <>
+    <Title size="h4" mb="m">
       Typography
     </Title>
-    <Divider m="0 0 35px" />
-    <Flex m="0 0 35px">
+    <Divider mb="l" />
+    <Flex mb="l">
       <Box>
-        <Title is="h3" size="h5" m="0">
+        <Title as="h3" size="h5" m={0}>
           Josefin Sans
         </Title>
-        <Text fontSize="m" m={0}>
-          Headings
-        </Text>
+        <Text m={0}>Headings</Text>
       </Box>
-      <Divider width="1px" height="62px" m="0 45px" />
-      <Box>
-        <Title is="h3" size="h5" m="0">
+      <Divider width="1px" height="62px" mx="xxl" />
+      <Box mt="2px">
+        <Title as="h3" size="h5" m={0}>
           Open Sans
         </Title>
-        <Text fontSize="m" m={0}>
-          Body text
-        </Text>
+        <Text m={0}>Body text</Text>
       </Box>
     </Flex>
-    <Divider m="0 0 50px" />
-    <Title is="h1" size="h1" m="0 0 10px">
+    <Divider mb="72px" />
+    <Title as="h1" size="h1" m={0}>
       Heading H1
     </Title>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.heading.h1}
       pt
     </Text>
-    <Title m="0 0 0px">Heading H2</Title>
-    <Text color="#ababab" fontSize="m">
+    <Title m={0}>Heading H2</Title>
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.heading.h2}
       pt
     </Text>
-    <Title is="h3" size="h3" m="0 0 0px">
+    <Title as="h3" size="h3" m={0}>
       Heading H3
     </Title>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.heading.h3}
       pt
     </Text>
-    <Title is="h4" size="h4" m="0 0 0px">
+    <Title as="h4" size="h4" m={0}>
       Heading H4
     </Title>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.heading.h4}
       pt
     </Text>
-    <Title is="h5" size="h5" m="0 0 0px">
+    <Title as="h5" size="h5" m={0}>
       Heading H5
     </Title>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.heading.h5}
       pt
     </Text>
-    <Text m="0">Body text</Text>
-    <Text color="#ababab" fontSize="m">
+    <Text fontSize="l" m={0}>
+      Body text
+    </Text>
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.l}
       pt
     </Text>
-    <Text fontSize="m" m="0">
-      Body text
-    </Text>
-    <Text color="#ababab" fontSize="m">
+    <Text m={0}>Body text</Text>
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.m}
       pt
     </Text>
-    <Text fontSize="s" m="0">
+    <Text fontSize="s" m={0}>
       Body text
     </Text>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.s}
       pt
     </Text>
-    <Text fontSize="xs" m="0">
-      Body text Small
+    <Text fontSize="xs" m={0}>
+      Body text
     </Text>
-    <Text color="#ababab" fontSize="m">
+    <Text color="grayscale.600">
       {' '}
       {theme.fontSizes.xs}
       pt
     </Text>
-  </Fragment>
+  </>
 );
 
-export default Typo;
+Typography.propTypes = {
+  theme: PropTypes.objectOf(PropTypes.any)
+};
+
+export default withTheme(Typography);

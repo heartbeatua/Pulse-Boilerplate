@@ -4,7 +4,7 @@ import Text from '../../src/components/atoms/Text';
 
 export default () => (
   <Fragment>
-    <Title is="h1" m="0 0 50px">
+    <Title as="h1" mb="xxl">
       Pulse Boilerplate
     </Title>
     <Text maxWidth="700px">

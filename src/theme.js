@@ -1,26 +1,17 @@
 const colors = {
   black: '#191919',
   white: '#fff',
+  brand: '#62e6ac',
+  cta: '#ff8c5f',
+  link: '#1755b7',
+  error: '#ff4d4d',
+  success: '#75de50',
   grayscale: {
     300: '#e3e3e3',
     400: '#d2d2d2',
     600: '#a3a3a3',
     800: '#7d7d7d'
-  },
-  brand: '#62e6ac',
-  cta: '#ff8c5f',
-  link: '#1755b7',
-  projects: {
-    paper: '#487ff7',
-    nourish: '#77d27f',
-    unight: '#a24ea8',
-    yoga: '#e74069',
-    sayme: '#ec8453',
-    aviapark: '#e85a7e',
-    officecl: '#e5eff4'
-  },
-  error: '#ff4d4d',
-  success: '#75de50'
+  }
 };
 
 const fonts = {

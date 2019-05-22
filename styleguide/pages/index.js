@@ -29,10 +29,10 @@ export default () => (
     </Box>
     <Content pb="350px">
       <Container>
-        <Title is="h1" size="h1" m="0 0 80px">
+        <Title as="h1" size="h1" m="0 0 80px">
           .pulse
         </Title>
-        <Title is="h2" size="h4" m="0 0 60px">
+        <Title as="h2" size="h4" m="0 0 60px">
           React based boilerplate for creating scalable and well documented
           Design Systems.
         </Title>
@@ -88,7 +88,7 @@ export default () => (
         </Row>
         <Row gap={110}>
           <Col width={[1 / 3]}>
-            <Title is="h3" size="h4">
+            <Title as="h3" size="h4">
               Pulse v1.0
             </Title>
             <Text>Opening is always so exciting.</Text>
@@ -103,7 +103,7 @@ export default () => (
           </Col>
           <Col width={[1 / 3]}>
             <Box maxWidth="336px">
-              <Title is="h3" size="h4">
+              <Title as="h3" size="h4">
                 Resources
               </Title>
               <Text>
@@ -119,7 +119,7 @@ export default () => (
           </Col>
           <Col width={[1 / 3]}>
             <Box maxWidth="336px">
-              <Title is="h3" size="h4">
+              <Title as="h3" size="h4">
                 Did you like it?
               </Title>
               <Text>

@@ -29,7 +29,7 @@ const Card = ({ to, icon, title, text, name, border, ...rest }) => {
           </div>
         </Box>
       )}
-      <Title is="h3" size="h4" mb="s">
+      <Title as="h3" size="h4" mb="s">
         {title}
       </Title>
       <Text
