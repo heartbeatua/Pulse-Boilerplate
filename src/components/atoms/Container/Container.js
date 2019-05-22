@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
-import { space, breakpoints } from '../../../theme/theme';
+import { space, breakpoints } from '../../../theme';
 
 const StyledContainer = styled(Box)`
   position: relative;

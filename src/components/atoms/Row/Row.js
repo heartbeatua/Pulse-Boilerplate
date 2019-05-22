@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
-import { space } from '../../../theme/theme';
+import { space } from '../../../theme';
 
 const StyledRow = styled(Box)`
   display: flex;

@@ -29,7 +29,7 @@ const NavLinkItem = styled(Link)`
 
   &.active {
     color: ${themeGet('colors.black')};
-    border-color: ${themeGet('colors.brand')};
+    border-color: ${themeGet('colors.black')};
   }
 `;
 
