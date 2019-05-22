@@ -27,7 +27,7 @@ export default () => (
         <img src={logo} alt="" />
       </Box>
     </Box>
-    <Content pb="350px">
+    <Content pb="352px">
       <Container>
         <Title as="h1" size="h1" m="0 0 80px">
           .pulse
@@ -45,7 +45,7 @@ export default () => (
           p="88px"
         />
         <Row gap={72}>
-          <Col mb="72px" width={['auto']}>
+          <Col mb="72px" width={[1 / 2]}>
             <Card
               to="/core-values"
               title="Core Values"
@@ -53,7 +53,7 @@ export default () => (
               icon={iconCoreValue}
             />
           </Col>
-          <Col mb="72px" width={['auto']}>
+          <Col mb="72px" width={[1 / 2]}>
             <Card
               to="/principles"
               title="Principles"
@@ -63,7 +63,7 @@ export default () => (
           </Col>
         </Row>
         <Row gap={72}>
-          <Col width={['auto']}>
+          <Col width={[1 / 2]}>
             <Card
               to="/style"
               title="Style"
@@ -71,7 +71,7 @@ export default () => (
               icon={iconStyle}
             />
           </Col>
-          <Col width={['auto']}>
+          <Col width={[1 / 2]}>
             <Card
               to="/components"
               title="Components"

@@ -10,6 +10,7 @@ import Title from '../src/components/atoms/Title';
 import Text from '../src/components/atoms/Text';
 import './src/assets/css/normalize.css';
 import './src/assets/css/base.css';
+import './src/assets/css/highlight.css';
 
 const markdown = {
   h1: props => <Title {...props} size="h1" as="h1" />,

@@ -52,6 +52,8 @@ export default () => (
       <ColorBoxWithTheme color="grayscale.600" />
       <ColorBoxWithTheme color="grayscale.800" />
       <ColorBoxWithTheme color="link" />
+      <ColorBoxWithTheme color="error" />
+      <ColorBoxWithTheme color="success" />
     </Flex>
   </>
 );
