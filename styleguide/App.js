@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { hot } from 'react-hot-loader/root';
 import { MDXProvider } from '@mdx-js/react';
 import { themeGet } from 'styled-system';
 import { find, compact, sortBy } from 'lodash';
@@ -111,4 +112,4 @@ App.propTypes = {
   routes: PropTypes.array
 };
 
-export default App;
+export default hot(App);

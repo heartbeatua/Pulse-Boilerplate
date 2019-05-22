@@ -5,6 +5,11 @@ import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 const devMode = process.env.NODE_ENV !== 'production';
 
 const config = {
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
   module: {
     rules: [
       {
