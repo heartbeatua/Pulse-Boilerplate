@@ -1,6 +1,6 @@
 {
-  "presets": ["env", "react", "stage-0"],
-  "plugins": ["react-docgen"],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-proposal-class-properties", "react-docgen"],
   "env": {
     "development": {
       "plugins": ["react-hot-loader/babel", "babel-plugin-styled-components"]

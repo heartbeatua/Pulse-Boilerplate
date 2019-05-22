@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import { ScopeProvider } from '@compositor/x0/components';
+import { MDXProvider } from '@mdx-js/react';
 import { themeGet } from 'styled-system';
 import { find, compact, sortBy } from 'lodash';
 import * as atoms from '../src/components';
@@ -88,18 +88,20 @@ const markdown = {
 const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
-      <Switch>
-        {routes.map(({ key, path, component: Component }) => (
-          <Route
-            exact
-            key={key}
-            path={path}
-            render={props => (
-              <Component {...props} />
-            )}
-          />
-        ))}
-      </Switch>
+      <MDXProvider>
+        <Switch>
+          {routes.map(({ key, path, component: Component }) => (
+            <Route
+              exact
+              key={key}
+              path={path}
+              render={props => (
+                <Component {...props} />
+              )}
+            />
+          ))}
+        </Switch>
+      </MDXProvider>
     </BrowserRouter>
   </ThemeProvider>
 );
