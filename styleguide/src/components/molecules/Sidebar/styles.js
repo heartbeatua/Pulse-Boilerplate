@@ -6,7 +6,6 @@ const SubMenu = styled.ul`
   list-style: none;
   padding: 0 0 14px;
   margin: 30px 0;
-  font-size: 20px;
   border-bottom: 1px solid ${themeGet('colors.grayscale.400')};
 `;
 

@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
 `;
 
 const TopNav = () => (
-  <Flex mb="xxl">
+  <Flex mb="56px">
     {routes.map(({ key, name, path, dirname }) => (
       <StyledLink
         mr="l"

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Box from '../../src/components/atoms/Box';
 import Text from '../../src/components/atoms/Text';
@@ -17,28 +17,22 @@ import iconCoreValue from '../src/assets/img/icons/core-values.svg';
 import iconPrinciples from '../src/assets/img/icons/principles.svg';
 
 const Content = styled(Box)`
-  display: block;
-  background-repeat: no-repeat;
-  background-position: 50% calc(100% + 400px);
+  background: url(${bg}) no-repeat 50% calc(100% + 400px);
 `;
 
-const Logo = styled.div`
-  padding: 40px 40px 36px;
-`;
-
-const Home = () => (
-  <Fragment>
+export default () => (
+  <>
     <Box mb="80px">
-      <Logo>
+      <Box p="40px 40px 36px">
         <img src={logo} alt="" />
-      </Logo>
+      </Box>
     </Box>
-    <Content style={{ backgroundImage: `url(${bg})` }} pb="350px">
+    <Content pb="350px">
       <Container>
-        <Title is="h1" size="h1" m="0 0 85px -8px">
+        <Title is="h1" size="h1" m="0 0 80px">
           .pulse
         </Title>
-        <Title is="h2" size="h4" m="0 0 85px">
+        <Title is="h2" size="h4" m="0 0 60px">
           React based boilerplate for creating scalable and well documented
           Design Systems.
         </Title>
@@ -69,7 +63,7 @@ const Home = () => (
           </Col>
         </Row>
         <Row gap={72}>
-          <Col mb="72px" width={['auto']}>
+          <Col width={['auto']}>
             <Card
               to="/style"
               title="Style"
@@ -89,20 +83,19 @@ const Home = () => (
         </Row>
         <Row>
           <Col>
-            <Divider m="160px 0 147px" />
+            <Divider m="160px 0 144px" />
           </Col>
         </Row>
         <Row gap={110}>
           <Col width={[1 / 3]}>
-            <Title is="h3" size="h4" m="0 0 30px">
+            <Title is="h3" size="h4">
               Pulse v1.0
             </Title>
             <Text>Opening is always so exciting.</Text>
             <Text m={0}>
               <Link
-                underline
+                underline={1}
                 href="https://github.com/heartbeatua/Pulse-Boilerplate"
-                target="_blank"
               >
                 find out more...
               </Link>
@@ -110,7 +103,7 @@ const Home = () => (
           </Col>
           <Col width={[1 / 3]}>
             <Box maxWidth="336px">
-              <Title is="h3" size="h4" m="0 0 30px">
+              <Title is="h3" size="h4">
                 Resources
               </Title>
               <Text>
@@ -118,11 +111,7 @@ const Home = () => (
                 their products better.
               </Text>
               <Text m={0}>
-                <Link
-                  underline
-                  href="https://heartbeat.ua/resources"
-                  target="_blank"
-                >
+                <Link underline={1} href="https://heartbeat.ua/resources">
                   find out more...
                 </Link>
               </Text>
@@ -130,18 +119,17 @@ const Home = () => (
           </Col>
           <Col width={[1 / 3]}>
             <Box maxWidth="336px">
-              <Title is="h3" size="h4" m="0 0 30px">
+              <Title is="h3" size="h4">
                 Did you like it?
               </Title>
-              <Text m="0 0 35px">
+              <Text>
                 We are currently creating, documenting and updating our process
                 of Design System creation.
               </Text>
               <Text m={0}>
                 <Link
-                  underline
-                  href="https://heartbeat.ua/design-system-core"
-                  target="_blank"
+                  underline={1}
+                  href="https://heartbeat.ua/design-system-core/#minimize"
                 >
                   find out more...
                 </Link>
@@ -151,7 +139,5 @@ const Home = () => (
         </Row>
       </Container>
     </Content>
-  </Fragment>
+  </>
 );
-
-export default Home;

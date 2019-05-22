@@ -7,7 +7,8 @@ import HomePage from '../../pages/HomePage';
 import InnerPage from '../../pages/InnerPage';
 
 const Wrapper = styled.div`
-  font-family: ${tg('fonts.bodyText')}, sans-serif;
+  font-family: ${tg('fonts.bodyText')};
+  font-size: ${tg('fontSizes.m')}px;
   color: ${tg('colors.black')};
   line-height: ${tg('lineHeights.l')};
 `;

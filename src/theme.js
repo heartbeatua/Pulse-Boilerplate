@@ -24,15 +24,15 @@ const colors = {
 };
 
 const fonts = {
-  title: "'Josefin Sans', sans-serif",
+  heading: "'Josefin Sans', sans-serif",
   bodyText: "'Open Sans', sans-serif"
 };
 
 const fontSizes = {
-  l: 23,
-  m: 20,
+  xs: 14,
   s: 16,
-  xs: 15,
+  m: 18,
+  l: 20,
   heading: {
     h1: 182,
     h2: 101,
@@ -43,7 +43,7 @@ const fontSizes = {
 };
 
 const lineHeights = {
-  l: 1.35,
+  l: 1.5,
   heading: {
     h1: 0.8,
     h2: 1.06,

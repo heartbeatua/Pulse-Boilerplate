@@ -1,30 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-import Box from '../Box';
+import {
+  themeGet,
+  space,
+  fontWeight,
+  display,
+  fontFamily
+} from 'styled-system';
+import tag from 'clean-tag';
 
-const StyledTitle = styled(Box)`
+const spaceDefault = ({ mb = 'l', mt = 0, m, ...rest }) =>
+  m === undefined ? { mt, mb, ...rest } : { m, ...rest };
+
+const StyledTitle = styled(tag)`
   line-height: ${({ size }) => themeGet(`lineHeights.heading.${size}`)};
   font-size: ${({ size }) => themeGet(`fontSizes.heading.${size}`)}px;
+  ${props => space(spaceDefault(props))};
+  ${fontWeight};
+  ${display};
+  ${fontFamily};
 `;
 
 const Title = props => <StyledTitle {...props} />;
 
 Title.propTypes = {
-  ...Box.propTypes,
   fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  fontFamily: PropTypes.string,
-  is: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div']),
+  fontFamily: PropTypes.oneOf(['heading', 'bodyText']),
+  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div']),
   size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5']),
-  m: PropTypes.string
+  ...space.propTypes,
+  ...display.propTypes
 };
 Title.defaultProps = {
-  is: 'h2',
+  as: 'h2',
   size: 'h2',
   fontWeight: 'bold',
-  m: '0 0 30px',
-  fontFamily: 'title'
+  fontFamily: 'heading'
 };
 
 export default Title;
