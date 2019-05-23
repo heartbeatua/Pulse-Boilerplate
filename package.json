@@ -66,6 +66,7 @@
     "react-dom": "^16.8.6",
     "react-highlight": "^0.12.0",
     "react-hot-loader": "^4.8.7",
+    "react-live": "^2.1.2",
     "react-router-dom": "^5.0.0",
     "styled-components": "^4.2.0",
     "styled-system": "^4.2.2",
