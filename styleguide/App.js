@@ -14,7 +14,7 @@ import './src/assets/css/highlight.css';
 
 const markdown = {
   h1: props => <Title {...props} size="h1" as="h1" />,
-  h2: props => <Title {...props} size="h2" as="h2" />,
+  h2: props => <Title {...props} />,
   h3: props => <Title {...props} size="h3" as="h3" />,
   h4: props => <Title {...props} size="h4" as="h4" />,
   h5: props => <Title {...props} size="h5" as="h5" />,

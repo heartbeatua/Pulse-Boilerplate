@@ -32,7 +32,7 @@ export default () => (
         <Title as="h1" size="h1" m="0 0 80px">
           .pulse
         </Title>
-        <Title as="h2" size="h4" m="0 0 60px">
+        <Title size="h4" m="0 0 60px">
           React based boilerplate for creating scalable and well documented
           Design Systems.
         </Title>
