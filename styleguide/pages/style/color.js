@@ -38,10 +38,7 @@ const ColorBoxWithTheme = withTheme(ColorBox);
 
 export default () => (
   <>
-    <Title mb="xxl">Colors</Title>
-    <Title size="h5" mb="m">
-      Primary
-    </Title>
+    <Title mb="xl">Colors</Title>
     <Flex flexWrap="wrap">
       <ColorBoxWithTheme color="brand" />
       <ColorBoxWithTheme color="cta" />

@@ -5,7 +5,7 @@ import Title from '../../../src/components/atoms/Title';
 
 export default () => (
   <>
-    <Title mb="xxl">Theme</Title>
+    <Title mb="xl">Theme</Title>
     <Highlight>{JSON.stringify(theme, null, '  ')}</Highlight>
   </>
 );

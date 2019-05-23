@@ -4,7 +4,7 @@ import Text from '../../src/components/atoms/Text';
 
 export default () => (
   <>
-    <Title as="h1" mb="xxl">
+    <Title as="h1" mb="xl">
       Core values
     </Title>
     <Text maxWidth="700px">

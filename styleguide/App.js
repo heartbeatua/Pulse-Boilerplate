@@ -13,12 +13,11 @@ import './src/assets/css/base.css';
 import './src/assets/css/highlight.css';
 
 const markdown = {
-  h1: props => <Title {...props} size="h1" as="h1" />,
-  h2: props => <Title {...props} />,
-  h3: props => <Title {...props} size="h3" as="h3" />,
-  h4: props => <Title {...props} size="h4" as="h4" />,
-  h5: props => <Title {...props} size="h5" as="h5" />,
-  p: props => <Text {...props} />
+  h1: props => <Title size="h2" as="h1" mb="xl" {...props} />,
+  h2: props => <Title size="h3" mt="xl" mb="l" {...props} />,
+  h3: props => <Title size="h4" as="h3" mt="l" mb="m" {...props} />,
+  h4: props => <Title size="h5" as="h4" mt="l" mb="m" {...props} />,
+  p: props => <Text {...props} maxWidth="700px" />
 };
 
 const App = () => (
