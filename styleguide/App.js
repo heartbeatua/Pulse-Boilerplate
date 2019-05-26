@@ -6,6 +6,7 @@ import { MDXProvider } from '@mdx-js/react';
 import theme from '../src/theme';
 import routes from './routes';
 import BaseTemplate from './src/components/templates/BaseTemplate';
+import NotFoundPage from './src/components/pages/NotFoundPage';
 import Title from '../src/components/atoms/Title';
 import Text from '../src/components/atoms/Text';
 import '../src/assets/css/normalize.css';
@@ -37,6 +38,7 @@ const App = () => (
               )}
             />
           ))}
+          <Route component={NotFoundPage} />
         </Switch>
       </MDXProvider>
     </BrowserRouter>
