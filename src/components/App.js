@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader/root';
 import { ThemeProvider } from 'styled-components';
 import theme from '../theme';
 import HomePage from './pages/HomePage';
+import '../assets/css/normalize.css';
+import '../assets/css/base.css';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -15,4 +17,4 @@ const App = () => (
   </ThemeProvider>
 );
 
-export default hot(module)(App);
+export default hot(App);

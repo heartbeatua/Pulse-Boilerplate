@@ -1,6 +1,7 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -57,7 +58,7 @@ const config = {
     ]
   },
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin()]
+    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()]
   },
   devtool: devMode ? 'source-map' : false,
   plugins: []
