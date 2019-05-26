@@ -16,7 +16,7 @@ const Row = ({ children, ...rest }) => {
   return (
     <StyledRow {...rest}>
       {React.Children.map(children, child =>
-        React.cloneElement(child, { gap })
+        React.cloneElement(child, { gap }),
       )}
     </StyledRow>
   );
@@ -25,11 +25,11 @@ const Row = ({ children, ...rest }) => {
 Row.propTypes = {
   children: PropTypes.node.isRequired,
   gap: PropTypes.number,
-  ...Box.propTypes
+  ...Box.propTypes,
 };
 
 Row.defaultProps = {
-  gap: space.l
+  gap: space.l,
 };
 
 export default Row;

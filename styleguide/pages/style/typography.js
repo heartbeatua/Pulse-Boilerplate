@@ -101,7 +101,7 @@ const Typography = ({ theme }) => (
 );
 
 Typography.propTypes = {
-  theme: PropTypes.objectOf(PropTypes.any)
+  theme: PropTypes.objectOf(PropTypes.any),
 };
 
 export default withTheme(Typography);

@@ -9,20 +9,20 @@ Divider.propTypes = {
   height: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-    PropTypes.array
+    PropTypes.array,
   ]),
   width: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-    PropTypes.array
+    PropTypes.array,
   ]),
-  ...Box.propTypes
+  ...Box.propTypes,
 };
 
 Divider.defaultProps = {
   bg: 'grayscale.400',
   width: 'auto',
-  height: '1px'
+  height: '1px',
 };
 
 export default Divider;

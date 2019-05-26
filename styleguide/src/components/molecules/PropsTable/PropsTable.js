@@ -21,16 +21,16 @@ const StyledTable = styled(tag.table)`
 
 class PropsTable extends Component {
   static propTypes = {
-    component: PropTypes.func.isRequired
+    component: PropTypes.func.isRequired,
   };
 
   state = {
-    isOpenedStyledProps: false
+    isOpenedStyledProps: false,
   };
 
   toggleStyledProps = () => {
     this.setState(prevState => ({
-      isOpenedStyledProps: !prevState.isOpenedStyledProps
+      isOpenedStyledProps: !prevState.isOpenedStyledProps,
     }));
   };
 

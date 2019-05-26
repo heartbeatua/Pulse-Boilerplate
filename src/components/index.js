@@ -25,5 +25,5 @@ export {
   Container,
   Row,
   Col,
-  Card
+  Card,
 };

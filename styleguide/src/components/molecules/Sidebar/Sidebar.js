@@ -42,7 +42,7 @@ const Sidebar = ({ location }) => {
 };
 
 Sidebar.propTypes = {
-  location: PropTypes.objectOf(PropTypes.string)
+  location: PropTypes.objectOf(PropTypes.string),
 };
 
 export default withRouter(Sidebar);

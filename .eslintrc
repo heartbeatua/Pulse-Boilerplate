@@ -28,7 +28,9 @@
     "react/jsx-one-expression-per-line": 0,
     "react/require-default-props": 0,
     "prettier/prettier": ["error", {
-      "singleQuote": true
-    }]
+      "singleQuote": true,
+      "trailingComma": "all"
+    }],
+    "import/prefer-default-export": "off"
   }
 }

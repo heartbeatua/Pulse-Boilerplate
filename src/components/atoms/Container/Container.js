@@ -14,31 +14,31 @@ Container.propTypes = {
   pl: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
   pr: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
   mx: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
   maxWidth: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
-  ...Box.propTypes
+  ...Box.propTypes,
 };
 
 Container.defaultProps = {
   pl: 's',
   pr: 's',
   mx: 'auto',
-  maxWidth: 'l'
+  maxWidth: 'l',
 };
 
 export default Container;

@@ -16,7 +16,7 @@ const flex = style({
       default:
         return `0 0 ${n * 100}%;`;
     }
-  }
+  },
 });
 
 const StyledCol = styled(ColBox)`
@@ -33,13 +33,13 @@ Col.propTypes = {
   width: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
-  ...ColBox.propTypes
+  ...ColBox.propTypes,
 };
 
 Col.defaultProps = {
-  width: 'auto'
+  width: 'auto',
 };
 
 export default Col;

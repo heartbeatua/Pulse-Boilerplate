@@ -31,7 +31,7 @@ const InnerPage = ({ children }) => (
 );
 
 InnerPage.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default InnerPage;

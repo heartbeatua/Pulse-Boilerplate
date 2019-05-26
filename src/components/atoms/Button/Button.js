@@ -43,13 +43,13 @@ const styles = css`
           themeGet(
             color === 'black' && skin === 'fill'
               ? 'colors.white'
-              : 'colors.black'
+              : 'colors.black',
           )};
         color: ${({ color, skin }) =>
           themeGet(
             color === 'black' && skin === 'fill'
               ? 'colors.black'
-              : 'colors.white'
+              : 'colors.white',
           )};
       }
     `};
@@ -99,7 +99,7 @@ Button.propTypes = {
   display: PropTypes.string,
   fontSize: PropTypes.string,
   ...space.propTypes,
-  ...maxWidth.propTypes
+  ...maxWidth.propTypes,
 };
 
 Button.defaultProps = {
@@ -109,7 +109,7 @@ Button.defaultProps = {
   display: 'inline-block',
   fontSize: 's',
   disabled: false,
-  wide: false
+  wide: false,
 };
 
 export default Button;

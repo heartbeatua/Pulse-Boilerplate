@@ -15,7 +15,7 @@ const routes = context.keys().map(key => {
     dirname: dir,
     name: name === 'index' && dir ? dir : name,
     path: path || '/',
-    component: context(key).default
+    component: context(key).default,
   };
 });
 
@@ -24,7 +24,7 @@ const organisedRoutes = routes.reduce((accum, route, i, array) => {
   if (!dirname || key.search(/index/) !== -1) {
     const subDir = filter(
       array,
-      o => o.dirname === dirname && o.dirname !== o.name
+      o => o.dirname === dirname && o.dirname !== o.name,
     );
     accum.push(dirname ? { ...route, subDir } : route);
   }
@@ -38,8 +38,8 @@ const sortedRoutes = sortBy(organisedRoutes, ({ name }) =>
     'core-values',
     'principles',
     'style',
-    'components'
-  ].indexOf(name)
+    'components',
+  ].indexOf(name),
 );
 
 export default routes;

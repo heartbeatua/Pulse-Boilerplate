@@ -8,8 +8,8 @@ const devMode = process.env.NODE_ENV !== 'production';
 const config = {
   resolve: {
     alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   module: {
     rules: [
@@ -17,15 +17,15 @@ const config = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.css$/,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -35,10 +35,10 @@ const config = {
             options: {
               limit: 8192,
               fallback: 'file-loader',
-              name: 'img/[name].[hash:8].[ext]'
-            }
-          }
-        ]
+              name: 'img/[name].[hash:8].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.html$/,
@@ -46,22 +46,22 @@ const config = {
           {
             loader: 'html-loader',
             options: {
-              minimize: false
-            }
-          }
-        ]
+              minimize: false,
+            },
+          },
+        ],
       },
       {
         test: /\.mdx?$/,
-        use: ['babel-loader', '@mdx-js/loader']
-      }
-    ]
+        use: ['babel-loader', '@mdx-js/loader'],
+      },
+    ],
   },
   optimization: {
-    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()]
+    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()],
   },
   devtool: devMode ? 'source-map' : false,
-  plugins: []
+  plugins: [],
 };
 
 if (!devMode) {

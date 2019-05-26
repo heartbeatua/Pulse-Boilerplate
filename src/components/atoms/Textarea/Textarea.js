@@ -23,11 +23,11 @@ const Textarea = props => <StyledTextarea {...props} />;
 
 Textarea.propTypes = {
   height: PropTypes.string,
-  p: PropTypes.string
+  p: PropTypes.string,
 };
 Textarea.defaultProps = {
   height: '120px',
-  p: '13px 0'
+  p: '13px 0',
 };
 
 export default Textarea;

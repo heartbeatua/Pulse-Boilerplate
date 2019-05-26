@@ -5,7 +5,7 @@ import {
   LiveProvider,
   LiveEditor as ReactLiveEditor,
   LiveError,
-  LivePreview
+  LivePreview,
 } from 'react-live';
 import editorTheme from './theme';
 import Box from '../../../../../src/components/atoms/Box';
@@ -22,7 +22,7 @@ const LiveEditor = ({ theme, ...rest }) => {
           <ReactLiveEditor
             style={{
               fontSize: fontSizes.s,
-              background: '#f3f3f3'
+              background: '#f3f3f3',
             }}
           />
         </Box>
@@ -32,7 +32,7 @@ const LiveEditor = ({ theme, ...rest }) => {
             padding: '4px 8px',
             background: colors.error,
             fontSize: fontSizes.xs,
-            color: '#fff'
+            color: '#fff',
           }}
         />
       </LiveProvider>
@@ -41,7 +41,7 @@ const LiveEditor = ({ theme, ...rest }) => {
 };
 
 LiveEditor.propTypes = {
-  theme: PropTypes.objectOf(PropTypes.any)
+  theme: PropTypes.objectOf(PropTypes.any),
 };
 
 export default withTheme(LiveEditor);

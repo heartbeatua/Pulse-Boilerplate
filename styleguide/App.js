@@ -18,7 +18,7 @@ const markdown = {
   h2: props => <Title size="h3" mt="xl" mb="l" {...props} />,
   h3: props => <Title size="h4" as="h3" mt="l" mb="m" {...props} />,
   h4: props => <Title size="h5" as="h4" mt="l" mb="m" {...props} />,
-  p: props => <Text {...props} maxWidth="700px" />
+  p: props => <Text {...props} maxWidth="700px" />,
 };
 
 const App = () => (

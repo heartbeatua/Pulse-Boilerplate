@@ -65,11 +65,11 @@ Link.propTypes = {
   ...display.propTypes,
   ...width.propTypes,
   ...height.propTypes,
-  ...borders.propTypes
+  ...borders.propTypes,
 };
 Link.defaultProps = {
   underline: 0,
-  color: 'inherit'
+  color: 'inherit',
 };
 
 export default Link;

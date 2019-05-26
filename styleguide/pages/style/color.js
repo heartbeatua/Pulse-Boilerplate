@@ -31,7 +31,7 @@ const ColorBox = ({ color, size = 'm', theme }) => (
 ColorBox.propTypes = {
   color: PropTypes.string,
   size: PropTypes.string,
-  theme: PropTypes.objectOf(PropTypes.any)
+  theme: PropTypes.objectOf(PropTypes.any),
 };
 
 const ColorBoxWithTheme = withTheme(ColorBox);

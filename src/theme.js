@@ -10,13 +10,13 @@ const colors = {
     300: '#e3e3e3',
     400: '#d2d2d2',
     600: '#a3a3a3',
-    800: '#7d7d7d'
-  }
+    800: '#7d7d7d',
+  },
 };
 
 const fonts = {
   heading: "'Josefin Sans', sans-serif",
-  bodyText: "'Open Sans', sans-serif"
+  bodyText: "'Open Sans', sans-serif",
 };
 
 const fontSizes = {
@@ -29,8 +29,8 @@ const fontSizes = {
     h2: 101,
     h3: 79,
     h4: 47,
-    h5: 29
-  }
+    h5: 29,
+  },
 };
 
 const lineHeights = {
@@ -40,14 +40,14 @@ const lineHeights = {
     h2: 1.06,
     h3: 1.14,
     h4: 1.25,
-    h5: 1.32
-  }
+    h5: 1.32,
+  },
 };
 
 const maxWidths = {
   s: '768px',
   m: '992px',
-  l: '1226px'
+  l: '1226px',
 };
 
 const breakpoints = Object.values(maxWidths);
@@ -62,7 +62,7 @@ const space = {
   m: 24,
   l: 32,
   xl: 40,
-  xxl: 48
+  xxl: 48,
 };
 
 module.exports = {
@@ -72,5 +72,5 @@ module.exports = {
   lineHeights,
   breakpoints,
   space,
-  maxWidths
+  maxWidths,
 };

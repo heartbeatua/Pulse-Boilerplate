@@ -28,7 +28,7 @@ const BaseTemplate = ({ location, children }) => {
 
 BaseTemplate.propTypes = {
   location: PropTypes.objectOf(PropTypes.any),
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default withRouter(BaseTemplate);

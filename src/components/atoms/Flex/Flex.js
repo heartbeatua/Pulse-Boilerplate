@@ -6,10 +6,10 @@ const Flex = props => <Box {...props} />;
 
 Flex.propTypes = {
   display: PropTypes.string,
-  ...Box.propTypes
+  ...Box.propTypes,
 };
 Flex.defaultProps = {
-  display: 'flex'
+  display: 'flex',
 };
 
 export default Flex;

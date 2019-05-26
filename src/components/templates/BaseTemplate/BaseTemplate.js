@@ -13,7 +13,7 @@ const BaseTemplate = ({ header, children }) => (
 
 BaseTemplate.propTypes = {
   header: PropTypes.node,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default BaseTemplate;

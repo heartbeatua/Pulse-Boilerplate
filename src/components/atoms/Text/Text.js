@@ -9,14 +9,14 @@ Text.propTypes = {
   fontSize: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,
-    PropTypes.number
+    PropTypes.number,
   ]),
   m: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.number]),
-  ...Box.propTypes
+  ...Box.propTypes,
 };
 Text.defaultProps = {
   as: 'p',
-  m: '0 0 1.1em'
+  m: '0 0 1.1em',
 };
 
 export default Text;

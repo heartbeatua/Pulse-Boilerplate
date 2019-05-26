@@ -27,13 +27,13 @@ InputField.propTypes = {
   width: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
-    PropTypes.string
+    PropTypes.string,
   ]),
-  height: PropTypes.string
+  height: PropTypes.string,
 };
 InputField.defaultProps = {
   width: '100%',
-  height: '42px'
+  height: '42px',
 };
 
 export default InputField;

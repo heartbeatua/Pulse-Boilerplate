@@ -36,7 +36,7 @@ const Card = ({ to, icon, title, text, name, border, ...rest }) => {
         m={0}
         maxWidth="420px"
         dangerouslySetInnerHTML={{
-          __html: text
+          __html: text,
         }}
       />
     </StyledCard>
@@ -51,12 +51,12 @@ Card.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   name: PropTypes.string,
-  ...space.propTypes
+  ...space.propTypes,
 };
 
 Card.defaultProps = {
   border: '2px solid',
-  p: '56px'
+  p: '56px',
 };
 
 export default Card;

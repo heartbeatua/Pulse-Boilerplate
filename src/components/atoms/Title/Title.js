@@ -6,7 +6,7 @@ import {
   space,
   fontWeight,
   display,
-  fontFamily
+  fontFamily,
 } from 'styled-system';
 import tag from 'clean-tag';
 
@@ -30,13 +30,13 @@ Title.propTypes = {
   as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div']),
   size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5']),
   ...space.propTypes,
-  ...display.propTypes
+  ...display.propTypes,
 };
 Title.defaultProps = {
   as: 'h2',
   size: 'h2',
   fontWeight: 'bold',
-  fontFamily: 'heading'
+  fontFamily: 'heading',
 };
 
 export default Title;

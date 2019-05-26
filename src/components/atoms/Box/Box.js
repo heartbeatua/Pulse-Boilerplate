@@ -61,7 +61,7 @@ import {
   left,
   textStyle,
   colorStyle,
-  buttonStyle
+  buttonStyle,
 } from 'styled-system';
 
 const StyledBox = styled(tag)`
@@ -189,7 +189,7 @@ Box.propTypes = {
   ...left.propTypes,
   ...textStyle.propTypes,
   ...colorStyle.propTypes,
-  ...buttonStyle.propTypes
+  ...buttonStyle.propTypes,
 };
 
 export default Box;
