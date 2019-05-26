@@ -1,6 +1,6 @@
 {
   "name": "pulse-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React based boilerplate for creating scalable and well documented Design Systems.",
   "main": "src/index.js",
   "scripts": {

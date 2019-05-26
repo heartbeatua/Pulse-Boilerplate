@@ -89,7 +89,7 @@ export default () => (
         <Row gap={110}>
           <Col width={[1 / 3]}>
             <Title as="h3" size="h4">
-              Pulse v1.0
+              Pulse v1.1
             </Title>
             <Text>Opening is always so exciting.</Text>
             <Text m={0}>
