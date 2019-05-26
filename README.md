@@ -2,7 +2,7 @@
 
 # Pulse Boilerplate
 
-We've created this React based boilerplate during our research on Design System approach.
+We've created this React based boilerplate during our research on the Design System approach.
 It consists of modern tools and basic [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) structure.
 
 ## Features
@@ -10,40 +10,38 @@ It consists of modern tools and basic [Atomic Design](http://bradfrost.com/blog/
 - Up to date tools and practices for Design System creation
 - Focused on [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) methodology and naming convention
 - Clear and understandable structure of folders
-- With online [documentation of components](https://github.com/c8r/x0/).
-- Highlt customizable: themes, pages, templates
-- Handy components import (see below)
-- Easy work with styles
+- Documentation
+- Highly customizable: themes, pages, templates
+- Easy to work with styles using [styled system](https://styled-system.com/getting-started/)
 
 ## What's included
 
-- webpack@4
-- react@16, react-router@4
+#### The actual versions of:
+
+- webpack, babel, react, react-router
 - hot-reloading
 - eslint ([airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)) — code linter
 - [prettier](https://prettier.io/) — code formatter
-- [x0](https://github.com/c8r/x0/) — style guide 
 - [styled-components](https://www.styled-components.com/) — css-in-js
-- [styled-system](https://github.com/jxnblk/styled-system) — style your components at the advanced level
+- [styled-system](https://github.com/jxnblk/styled-system) — stylize your components at an advanced level
 
 ## Setup
 
 #### Install dependencies
 ```sh
-yarn
+npm install
 ```
-*Note: we recommend to use [`yarn` package manager](https://yarnpkg.com/), but `npm` is OK*
 
 #### Run development server
 ```sh
-yarn dev
+npm dev
 ```
 
-*Project will be running at [http://localhost:8080/](http://localhost:8080/)*
+*Project will be running at [http://localhost:3000/](http://localhost:3000/)*
 
 #### Generate production build
 ```sh
-yarn build
+npm build
 ```
 
 *Will create the `dist` folder*
@@ -52,27 +50,20 @@ yarn build
 
 #### Run a development server
 ```sh
-yarn guide
+npm guide
 ```
 
 *Style guide will run at [http://localhost:6060/](http://localhost:6060/)*
-
-#### Generate production build
-```sh
-yarn guide:build
-```
-
-*`docs` folder will be created*
 
 ## ESLint
 
 Run and get code review (you can pass a `--fix` setting that will try to solve a problem automatically)
 ```sh
-yarn lint
+npm eslint
 ```
 
 ## Theming
-We use [styled system theming](https://github.com/jxnblk/styled-system/blob/master/docs/getting-started.md#theming). Styled system is great theme-based style props for building [responsive](https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md) design systems with React. More data [here](https://github.com/jxnblk/styled-system/blob/master/docs/api.md).
+We use [styled components theming](https://www.styled-components.com/docs/advanced#theming). The styled system provides great [theme-based](https://github.com/styled-system/styled-system/blob/master/docs/getting-started.md#theming) [style props](https://github.com/styled-system/styled-system/blob/master/docs/api.md) for building [responsive](https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md) design systems with React.
 
 ## A few words about Atomic Design
 
@@ -80,14 +71,9 @@ Atomic design is a methodology composed of five distinct stages working together
 
 ## TODO
 
-- [x] Styled components
-- [x] styled-system
-- [x] x0
-- [ ] Redux
-- [ ] Tests (Jest)
-- [ ] Utils and Build tools (like favicon generator, etc)
-- [ ] Awesome-XXX links
-- [ ] Generact (for copy components)
+- [x] styled components
+- [x] styled system
+- [ ] tests (Jest)
 
 ## Got questions or suggestions?
 Simply reach through [our website](https://heartbeat.ua/lets-talk)
