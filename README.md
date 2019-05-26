@@ -34,14 +34,14 @@ npm install
 
 #### Run development server
 ```sh
-npm dev
+npm run dev
 ```
 
 *Project will be running at [http://localhost:3000/](http://localhost:3000/)*
 
 #### Generate production build
 ```sh
-npm build
+npm run build
 ```
 
 *Will create the `dist` folder*
@@ -50,7 +50,7 @@ npm build
 
 #### Run a development server
 ```sh
-npm guide
+npm run guide
 ```
 
 *Style guide will run at [http://localhost:6060/](http://localhost:6060/)*
@@ -59,7 +59,7 @@ npm guide
 
 Run and get code review (you can pass a `--fix` setting that will try to solve a problem automatically)
 ```sh
-npm eslint
+npm run eslint
 ```
 
 ## Theming
