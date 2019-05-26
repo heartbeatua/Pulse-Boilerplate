@@ -7,14 +7,14 @@ import { space } from '../../../theme';
 const StyledRow = styled(Box)`
   display: flex;
   flex-wrap: wrap;
-  margin-left: -${({ gap }) => gap / 2}px;
-  margin-right: -${({ gap }) => gap / 2}px;
+  margin-left: ${({ gap }) => (gap ? `-${gap / 2}px` : null)};
+  margin-right: ${({ gap }) => (gap ? `-${gap / 2}px` : null)};
 `;
 
-const Row = ({ children, ...props }) => {
-  const { gap } = props;
+const Row = ({ children, ...rest }) => {
+  const { gap } = rest;
   return (
-    <StyledRow {...props}>
+    <StyledRow {...rest}>
       {React.Children.map(children, child =>
         React.cloneElement(child, { gap })
       )}
@@ -23,6 +23,7 @@ const Row = ({ children, ...props }) => {
 };
 
 Row.propTypes = {
+  children: PropTypes.node.isRequired,
   gap: PropTypes.number,
   ...Box.propTypes
 };

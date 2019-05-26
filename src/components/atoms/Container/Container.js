@@ -2,16 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
-import { space, breakpoints } from '../../../theme';
 
 const StyledContainer = styled(Box)`
   position: relative;
   box-sizing: content-box;
 `;
+
 const Container = props => <StyledContainer {...props} />;
 
 Container.propTypes = {
-  px: PropTypes.oneOfType([
+  pl: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string
+  ]),
+  pr: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,
     PropTypes.string
@@ -21,14 +26,19 @@ Container.propTypes = {
     PropTypes.number,
     PropTypes.string
   ]),
-  maxWidth: PropTypes.string,
+  maxWidth: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string
+  ]),
   ...Box.propTypes
 };
 
 Container.defaultProps = {
-  px: [space.s, space.m],
+  pl: 's',
+  pr: 's',
   mx: 'auto',
-  maxWidth: breakpoints[2]
+  maxWidth: 'l'
 };
 
 export default Container;

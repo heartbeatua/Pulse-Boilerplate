@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { style } from 'styled-system';
-import Box from '../Box';
+import PropTypes from 'prop-types';
+import { style, top } from 'styled-system';
+import ColBox from '../ColBox';
 
 const flex = style({
   prop: 'width',
@@ -18,10 +18,13 @@ const flex = style({
     }
   }
 });
-const StyledCol = styled(Box)`
-  padding-left: ${({ gap }) => gap / 2}px;
-  padding-right: ${({ gap }) => gap / 2}px;
+
+const StyledCol = styled(ColBox)`
+  position: relative;
   ${flex};
+  ${top};
+  padding-left: ${({ gap }) => (gap ? `${gap / 2}px` : null)};
+  padding-right: ${({ gap }) => (gap ? `${gap / 2}px` : null)};
 `;
 
 const Col = props => <StyledCol {...props} />;
@@ -32,7 +35,7 @@ Col.propTypes = {
     PropTypes.number,
     PropTypes.string
   ]),
-  ...Box.propTypes
+  ...ColBox.propTypes
 };
 
 Col.defaultProps = {
