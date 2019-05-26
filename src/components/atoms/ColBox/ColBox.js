@@ -60,7 +60,7 @@ import {
   left,
   textStyle,
   colorStyle,
-  buttonStyle,
+  buttonStyle
 } from 'styled-system';
 
 const StyledBox = styled.div`
@@ -188,7 +188,7 @@ ColBox.propTypes = {
   ...left.propTypes,
   ...textStyle.propTypes,
   ...colorStyle.propTypes,
-  ...buttonStyle.propTypes,
+  ...buttonStyle.propTypes
 };
 
 export default ColBox;

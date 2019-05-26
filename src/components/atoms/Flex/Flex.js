@@ -1,15 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Box from '../Box';
 
-const StyledBox = styled(Box)`
-  display: flex;
-`;
-
-const Flex = props => <StyledBox {...props} />;
+const Flex = props => <Box {...props} />;
 
 Flex.propTypes = {
+  display: PropTypes.string,
   ...Box.propTypes
+};
+Flex.defaultProps = {
+  display: 'flex'
 };
 
 export default Flex;

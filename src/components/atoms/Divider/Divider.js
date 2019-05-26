@@ -1,16 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Box from '../Box/Box';
+import Box from '../Box';
 
-const StyledDivider = styled(Box)``;
-const Divider = props => <StyledDivider {...props} />;
+const Divider = props => <Box {...props} />;
 
 Divider.propTypes = {
-  ...Box.propTypes,
   bg: PropTypes.string,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array
+  ]),
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array
+  ]),
+  ...Box.propTypes
 };
 
 Divider.defaultProps = {
